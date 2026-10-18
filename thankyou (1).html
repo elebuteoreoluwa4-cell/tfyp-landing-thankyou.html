@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're Registered | L·EARN Academy</title>
+<meta name="color-scheme" content="light only">
+<meta name="robots" content="noindex">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#fff;color:#111;font-family:Georgia,serif;text-align:center;padding:24px}
+.tick{width:70px;height:70px;margin:0 auto 14px;border-radius:50%;background:#E10600;color:#fff;display:grid;place-items:center;font:700 36px Arial,sans-serif}
+h1{font:400 30px Impact,"Arial Narrow",sans-serif;margin:0 0 8px;letter-spacing:.02em}
+p{margin:0;color:#666;font-size:18px}
+a{color:#25D366}
+</style>
+
+<!-- Meta Pixel Code: counts each registration as a Lead -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1622205306068758');
+fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1622205306068758&ev=Lead&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<div>
+  <div class="tick">✓</div>
+  <h1>YOU’RE REGISTERED!</h1>
+  <p>Opening WhatsApp… <a id="go" href="#">Tap here</a> if it doesn’t open.</p>
+</div>
+<script>
+/* ===== PUT YOUR WHATSAPP GROUP LINK HERE ===== */
+const NEXT_LINK = "https://chat.whatsapp.com/YOUR-GROUP-LINK";
+/* ============================================= */
+document.getElementById("go").href = NEXT_LINK;
+setTimeout(() => { window.location.href = NEXT_LINK; }, 1200);
+</script>
+</body>
+</html>
